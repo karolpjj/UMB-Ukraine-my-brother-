@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMB Presale - Ukraine My Brother</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="UMB Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About UMB</a></li>
+                <li><a href="#">Tokenomics</a></li>
+                <li><a href="#">Presale</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Україна, ти з нами, ти не загинеш.</h1>
+        <p>Польща та Україна – одна країна. Ми за тобою, вся Польща підтримує тебе. Люблю і поважаю Київ, мою Батьківщину.</p>
+        <button onclick="scrollToPresale()">Join the Presale Now</button>
+    </section>
+
+    <section id="presale" class="presale">
+        <h2>Придбайте токени UMB</h2>
+        <input type="number" id="tokenAmount" placeholder="Введіть кількість токенів">
+        <p>Поточна ціна за токен: <span id="currentPrice">$0.000001 USD</span></p>
+        <p>Загальна ціна: <span id="totalPrice">0</span> USD</p>
+        <button onclick="purchaseTokens()">Підтвердити покупку</button>
+    </section>
+
+    <section class="connect-wallet">
+        <h2>Підключіть ваш криптогаманець</h2>
+        <button onclick="connectWallet()">Підключити гаманець Solana</button>
+        <p id="walletAddress">Гаманець не підключено</p>
+    </section>
+
+    <footer>
+        <p>Люблю і поважаю Київ, мою Батьківщину.</p>
+        <p>Контакти: support@umbproject.io</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
